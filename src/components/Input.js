@@ -55,9 +55,9 @@ function Input(){
           }
           dispatch(setSpaceCount(wordCount+1))
           setText("");
-        }
+        }      
       };
-    
+
     const handleChange =(e)=>{
         setText(e.target.value);
         dispatch(setCurrentword(e.target.value));
