@@ -7,7 +7,7 @@ function Result(){
 
     const trueWords = data.trueWords;
     const wrongWords = data.wrongWords;
-
+    
     const percantage = () => {
         return ((trueWords.length / (trueWords.length+wrongWords.length))*100)
     }
@@ -21,7 +21,7 @@ function Result(){
                 <div className="completed">
                     Speed: 
                     <div className="completed-score">
-                    {trueWords.length} W/PM
+                    {(trueWords.length+wrongWords.length)/1} W/PM
                     </div>
                 </div>
                 <div className="correctness-rate">

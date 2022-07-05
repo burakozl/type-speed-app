@@ -11,7 +11,7 @@ function Words(){
     
   useEffect(() => {
     dispatch(shuffleWords());
-  }, [])
+  }, [dispatch])
 
     let tenwords = data.data.slice(0,10);
     let targetWord = data.spaceCount %10;
