@@ -39,13 +39,13 @@ function Words(){
       <div className="word-clouds">
         {
           buttonText === "Turkish" ? 
-            tenwords.map((item,i)=>{
+            tenwords.map((item,i) => {
               return <span key={i} className=
-              {currentWord.trim().length==0 && i==targetWord 
+              {currentWord.trim().length === 0 && i ===targetWord 
                 ? "current-word"
-                : i==targetWord && isContain() 
+                : i === targetWord && isContain() 
                 ? "green"
-                : i==targetWord && !isContain()
+                : i === targetWord && !isContain()
                 ? "red"
                 : i<targetWord && trueWords.indexOf(item.targetWord.toLowerCase()) !== -1 
                 ? "green"
@@ -56,11 +56,11 @@ function Words(){
             }) :
             tenwords.map((item,i)=>{
               return <span key={i} className=
-              {currentWord.trim().length==0 && i==targetWord 
+              {currentWord.trim().length === 0 && i === targetWord 
                 ? "current-word"
-                : i == targetWord && isContain() 
+                : i === targetWord && isContain() 
                 ? "green"
-                : i == targetWord && !isContain() 
+                : i === targetWord && !isContain() 
                 ? "red"
                 : i < targetWord && trueWords.indexOf(item.englishWord.toLowerCase()) !== -1 
                 ? "green"

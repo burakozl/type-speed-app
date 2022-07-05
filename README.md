@@ -1,3 +1,14 @@
+# React-Redux Type Speed App
+www.patika.dev frontend eğitimi kapsamında yapılmıştır.Detay linki için [tıklayınız](https://app.patika.dev/courses/redux/typing-speed-app)
+
+## Kulanılan Teknoloji ve Araçlar
+* React.js
+* Redux
+* Redux Toolkit
+
+## [openlivepage](https://burakozel-typing-speed-app.netlify.app/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

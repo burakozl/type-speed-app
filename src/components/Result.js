@@ -8,7 +8,7 @@ function Result(){
     const trueWords = data.trueWords;
     const wrongWords = data.wrongWords;
 
-    const percantage =()=>{
+    const percantage = () => {
         return ((trueWords.length / (trueWords.length+wrongWords.length))*100)
     }
 

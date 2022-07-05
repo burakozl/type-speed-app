@@ -26,7 +26,7 @@ function Input(){
 
     useEffect(() => {
     let interval = null;
-    if(seconds===0){
+    if(seconds === 0){
         setIsActive(false);
     }
     if (isActive) {
@@ -41,7 +41,7 @@ function Input(){
 
     const handleSpace= (e) => {
         if (e.keyCode === 32) {
-          if(text.trim().toLowerCase() == data.data[wordCount].targetWord.toLowerCase() ||text.trim().toLowerCase() == data.data[wordCount].englishWord.toLowerCase()){
+          if(text.trim().toLowerCase() === data.data[wordCount].targetWord.toLowerCase() ||text.trim().toLowerCase() === data.data[wordCount].englishWord.toLowerCase()){
               setCorrect(correct+1);
               dispatch(setTrueWords(text.trim().toLowerCase()));
           }else{
@@ -49,7 +49,7 @@ function Input(){
               dispatch(setWrongWords(text.trim().toLowerCase()));
           }
           setWordCount(wordCount+1);
-          if(wordCount!=0 && wordCount%9==0){
+          if(wordCount !== 0 && wordCount%9 === 0){
               dispatch(shuffleWords());
               setWordCount(0);
           }
@@ -82,7 +82,7 @@ function Input(){
               <input 
               className="input-text" 
               value={text} 
-              disabled={(seconds==0) ? true : false}
+              disabled={(seconds === 0) ? true : false}
               onChange={(e)=>{handleChange(e)}}
               onKeyDown={handleSpace}/>
               <button className="btn-timer">{seconds}</button>
@@ -98,7 +98,7 @@ function Input(){
           </div>
       </div>
       {
-        seconds==0 && <Result/>
+        seconds === 0 && <Result/>
       }
     </>
     
