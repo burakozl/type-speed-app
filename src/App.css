@@ -110,7 +110,7 @@ span {
 }
 .result{
   position: absolute;
-  top: 82%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
